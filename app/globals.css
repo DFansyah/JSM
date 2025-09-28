@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: rgba(29, 39, 59, 0.85);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.product-card:hover .product-overlay {
+  transform: translateX(0);
+}
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  width: fit-content; 
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1e3a8a !important; 
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1e3a8a !important;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
