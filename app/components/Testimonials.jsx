@@ -42,7 +42,7 @@ export default function Testimonials() {
           className="pb-12"
         >
           {/* SwipperSlide Untuk Vid*/}
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="bg-slate-600 dark:bg-slate-800 p-4 rounded-xl shadow-lg text-white h-full">
               <video 
                 className="w-full rounded-lg"
@@ -57,7 +57,7 @@ export default function Testimonials() {
                 <p className="text-sm text-gray-300">"Pengerjaan cepat dan sangat profesional. Sangat membantu!"</p>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> \*}
           {/* SwipperSlide Untuk Foto */}
           <SwiperSlide>
             <div className="bg-slate-600 dark:bg-slate-800 p-4 rounded-xl shadow-lg text-white h-full">
